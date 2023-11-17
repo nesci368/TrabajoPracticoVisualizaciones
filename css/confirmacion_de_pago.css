@@ -1,0 +1,37 @@
+.encuadre{
+    margin: 7%;
+}
+
+.mensaje{
+    padding: 1% 4%;
+    background-color: #ffba44;
+    border-radius: 10px;
+}
+
+p{
+    font-weight:bold;
+}
+
+span{
+    font-weight: bolder;
+}
+
+.ir-a-inicio{
+    margin-top: 2%;
+    display: block;
+    font-size: 1.2em;
+    background-color: #ffba44;
+    padding: 1% 2%;
+    border-radius: 2em 2em;
+    border-color:1px solid #ba8833;
+}
+
+.ir-a-inicio:hover{
+    background-color:#ba8833;
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
