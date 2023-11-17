@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Cuidadora - Plataforma de Cuidadoras Domiciliarias</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/formulario_cuidadoras.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma de Cuidadoras Domiciliarias</h1>
+    </header>
+    
+    <section class="formulario-cuidadora">
+        <h2>Formulario de Inscripción para Cuidadoras</h2>
+        <form id="formulario-cuidadora" onsubmit="registrarCuidadora()">
+            <label for="nombre-cuidadora">Nombre:</label>
+            <input type="text" id="nombre-cuidadora" required>
+            
+            <label for="correo-cuidadora">Correo Electrónico:</label>
+            <input type="email" id="correo-cuidadora" required>
+            
+            <label for="contrasena-cuidadora">Contraseña:</label>
+            <input type="password" id="contrasena-cuidadora" required>
+            
+            <button type="submit">Registrarse como Cuidadora</button>
+        </form>
+        <p id="mensaje-confirmacion-cuidadora"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cuidadoras Domiciliarias</p>
+    </footer>
+    <script src="./js/formulario_cuidadora.js"></script>
+</body>
+</html>

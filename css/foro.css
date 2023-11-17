@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.foro {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007BFF;
+}
+
+.opinion-cuidadora {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.usuario {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.calificacion {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.estrellas {
+    color: #FFD700;
+    margin-right: 5px;
+}
+
+.comentario {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
