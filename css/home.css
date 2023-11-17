@@ -278,12 +278,15 @@ body {
 header {
     display: grid;
     background-color: var(--color-primario);
-    grid-template-columns: 2em 94% 4.5em;
+    grid-template-columns: 8em 89% 4.5em;
     align-items: center;
 }
 .logo{
     grid-column: 1;
-margin: 1em;
+    margin: 1em;
+}
+.logo img{
+    width: 6em;
 }
 .titulo{
     grid-column: 2;
