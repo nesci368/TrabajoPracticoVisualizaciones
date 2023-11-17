@@ -21,3 +21,10 @@
     cursor: pointer;
 }
 
+button {
+    margin-right: 10px;
+}
+
+select {
+    width: 50px;
+}
