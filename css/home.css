@@ -1,65 +1,136 @@
+*{
+    --color-primario: #aacff0;
+    --color-secundario: #ffba44;
+    --color-terciario: #eff8ff;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow-x: hidden; 
+    min-height: 100vh;
     background-color: #eff8ff;
 }
 
 header {
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    background-image: url(../IMG/HEADER.webp);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    height: 45%; 
-    margin: 0; 
+    display: grid;
+    background-color: var(--color-primario);
+    grid-template-columns: 2em 77em 4.5em;
+    align-items: center;
+}
+.logo{
+    grid-column: 1;
+margin: 1em;
+}
+.titulo{
+    grid-column: 2;
+    margin: 0.6em;
+}
+.menu-boton{
+    align-items: center;
+    display: block;
+    grid-column: 3;
+}
+.menu-boton:hover{
+    background-color: #6288aa;
+    cursor: pointer;
+}
+.menu-boton img{
+    display: block;
+    width: 4em;
+    padding-left: 0.2em;
 }
 
-nav ul {
-    list-style-type: none;
-    background-color: #333;
+.menuVis{
+    position: absolute;
+    background-color: var(--color-primario);
+    height: 200%;
+    margin: 0;
     padding: 0;
+    top: 0;
+    right: 0;
+    width: 15em;
+    height: 45em;
+    z-index: 2;
+}
+.menuVis ul{
+    padding: 0;
+    list-style: none;
     margin: 0;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.menuVis li{
+    padding: 1em;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+.menuVis li:hover{
+    background-color: #6288aa;
+    cursor: pointer;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.menuOcul{
+    display: none;
+}
+.mensaje-bienvenida{
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    z-index: 1;
+    user-select: none;
 }
 
-.hero {
+.mensaje-bienvenida h2{
+    font-size: 3em;
+    font-weight: 800;
+}
+.mensaje-bienvenida p{
+    font-size: 1.4em;
+}
+#carrusel{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+#carrusel img{
+    width: 100%;
+    height: 100%;
+}
+
+.botones-iniciar{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-iniciar button{
+    font-size: 1.2em;
+    margin: 1em;
+    background-color: var(--color-secundario);
+    padding: 1em;
+    border-radius: 2em 2em;
+}
+.botones-iniciar button:hover{
+    background-color:#ba8833;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--color-primario);
+    display: block;
     text-align: center;
-    padding: 40px;
 }
 
-.features {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
+footer p{
+    font-size: 1.5em;
+    display: block;
+    margin: 0;
+    padding: 1em;
 }
-
-#boton {
-    background-color: #ffba44;
-    height: 25px;
-    border-radius: 5px;
-    margin-left: 250px;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
 @media only screen and (max-width: 600px) {
     header {
         height: 50vh; 
