@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/formulario_de_pago.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./IMG/" alt="">
+        </section>
+        <section class="titulo">
+            <h1>Tu Cuidadora Ideal</h1>
+        </section>
+        <section class="menu-boton">
+            <img src="./IMG/menu.png" alt="">
+        </section>
+    </header>
+
+    <main>
+        <form id="formularioPago" action="./confirmacion_de_pago.html" onsubmit="return validarSeleccionTipoDeTarjeta() && validarTitularTarjeta() && validarNumeroTarjeta() && validarCVV()">
+            <p>Tipo de Tarjeta:</p>
+            <input type="radio" id="credito" name="tipoTarjeta" value="credito">
+            <label for="credito">Crédito</label><br>
+            
+            <input type="radio" id="debito" name="tipoTarjeta" value="debito">
+            <label for="debito">Débito</label><br><br>
+
+            <label for="titularDeLaTarjeta">Titular de la Tarjeta:</label>
+            <input type="text" id="titularDeLaTarjeta" name="titularDeLaTarjeta" required><br><br>
+            
+            <label for="numeroTarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" maxlength="16" required><br><br>
+            
+            <label for="fechaExpiracion">Fecha de Expiración:</label>
+            <input type="text" id="fechaExpiracion" name="fechaExpiracion" maxlength="5" placeholder="MM/YY" required><br><br>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required><br><br>
+            
+            <button class="pagar">Pagar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Cuidadoras Domiciliarias</p>
+    </footer>
+
+    <script src="./js/formulario_de_pago.js"></script>
+</body>
+</html>
