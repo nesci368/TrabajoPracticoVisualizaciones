@@ -1,6 +1,8 @@
 .buscar-cuidadoras {
     text-align: center;
     padding: 40px;
+    border: 1px black solid;
+    margin: 10px;
 }
 
 .buscar-cuidadoras form {
@@ -11,6 +13,7 @@
     width: 100%;
     padding: 10px;
     margin: 5px 0;
+
 }
 
 .buscar-cuidadoras button {

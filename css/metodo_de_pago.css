@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.formTarjeta{
+    background-color: white;
+    border: solid black 1px;
+    margin: 10px;
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 500px;
+}
+
+.formTarjeta form{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#numTarjeta{
+    width: 300px;
+}
+
+#nombreTitular{
+    width: 250px;
+}
+
+#Mes{
+    width: 300px;
+}
+
+#codSeguridad{
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+label{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #28A745; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    margin-left: 100px;
+}
+
+button:hover {
+    background-color: #218838; 
+}
