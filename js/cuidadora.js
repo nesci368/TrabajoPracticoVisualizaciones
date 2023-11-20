@@ -130,7 +130,7 @@ function mostrarResultados(resultados) {
             const tarjeta = document.createElement("div");
             tarjeta.classList.add("tarjeta-cuidadora");
             tarjeta.innerHTML = `
-                <img src="${cuidador1.imagen}" alt="Imagen de ${cuidadora.nombre}">
+                <img src="${"./IMG/cuidador1.jpg"}" alt="Imagen de ${cuidadora.nombre}">
                 <h2>${cuidadora.nombre}</h2>
                 <p>Especialidad: ${cuidadora.especialidad}</p>
                 <p>Ciudad: ${cuidadora.ciudad}</p>
