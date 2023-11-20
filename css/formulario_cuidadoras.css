@@ -8,15 +8,16 @@ body {
 
 .formulario-cuidadora {
     max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario en la página */
+    margin: 4% auto; /* Centra el formulario en la página */
     background-color: #fff; /* Color de fondo del formulario */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del formulario */
 }
+
 form {
     display: grid;
-    gap: 10px;
+    gap: 8px;
 }
 
 label {
@@ -32,8 +33,28 @@ button {
     margin-bottom: 10px;
 }
 
+.input-genero label{
+    display: inline-block;
+}
+
+.input-genero input [type="radio"]{
+    display: flex;
+}
+
+.boton-cv {
+    display: none;
+}
+
+.adjuntar-cv{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #ffba44;
+    color: #333;
+    border-radius: 5px;
+}
+
 button {
-    background-color: #28A745; 
+    background-color: #ffba44; 
     color: #fff; 
     padding: 10px 15px;
     border: none;
@@ -41,13 +62,14 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #218838; 
+button:hover, .adjuntar-cv:hover {
+    background-color: #ba8833; 
+    cursor: pointer;
 }
 
 #mensaje-confirmacion-cuidadora {
     margin-top: 20px;
-    color: #28A745; 
+    color: #ffba44; 
 }
 
 @media only screen and (max-width: 600px) {

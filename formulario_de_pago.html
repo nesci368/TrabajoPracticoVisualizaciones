@@ -21,10 +21,12 @@
     </header>
 
     <main>
-        <form id="formularioPago" action="./confirmacion_de_pago.html" onsubmit="return validarSeleccionTipoDeTarjeta() && validarTitularTarjeta() && validarNumeroTarjeta() && validarCVV()">
+        <h2>Formulario de pago</h2>
+
+        <form id="formularioPago" action="./confirmacion_de_pago.html" onsubmit="return validarSeleccionTipoDeTarjeta() && validarTitularTarjeta() && validarNumeroTarjeta() && validarFechaVencimiento() && validarCVV()">
             <p>Tipo de Tarjeta:</p>
             <input type="radio" id="credito" name="tipoTarjeta" value="credito">
-            <label for="credito">Crédito</label><br>
+            <label for="credito">Crédito</label>
             
             <input type="radio" id="debito" name="tipoTarjeta" value="debito">
             <label for="debito">Débito</label><br><br>

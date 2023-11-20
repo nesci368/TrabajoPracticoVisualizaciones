@@ -42,12 +42,12 @@ function validarNumeroTarjeta() {
 }
 
 document.getElementById("fechaExpiracion").addEventListener("input", function() {
-    var inputValue = this.value;
+    var fecha = this.value;
 
-    if (/^\d{2}$/.test(inputValue)) {
-        this.value = inputValue + '/';
-    } else if (/^\d{2}\/\d{2}$/.test(inputValue) && inputValue.charAt(2) !== '/') {
-        this.value = inputValue.substring(0, 2) + '/' + inputValue.substring(2);
+    if (/^\d{2}$/.test(fecha)) {
+        this.value = fecha + '/';
+    } else if (/^\d{2}\/\d{2}$/.test(fecha) && fecha.charAt(2) !== '/') {
+        this.value = fecha.substring(0, 2) + '/' + fecha.substring(2);
     }
 });
 function validarFechaVencimiento() {
