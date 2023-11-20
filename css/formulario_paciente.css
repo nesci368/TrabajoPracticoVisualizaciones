@@ -11,8 +11,12 @@ body {
     margin: 0 auto; 
     background-color: #fff; 
     padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 form {
@@ -33,7 +37,7 @@ textarea {
 }
 
 button {
-    background-color: #28A745; 
+    background-color: #ffba44; 
     color: #fff; 
     padding: 10px 15px;
     border: none;
@@ -42,12 +46,35 @@ button {
 }
 
 button:hover {
-    background-color: #218838; 
+    background-color:#ba8833;
 }
 
 #mensaje-confirmacion-paciente {
     margin-top: 20px;
     color: #28A745; 
+}
+
+.domicilio{
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+}
+
+.inputCasa{
+    margin-right: 50px;
+    margin-left: 5px;
+    width: 400px;
+}
+
+.inputNumero{
+    margin-left: 5px;
+    width: 100px;
+}
+
+.radios{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
 }
 
 @media only screen and (max-width: 600px) {

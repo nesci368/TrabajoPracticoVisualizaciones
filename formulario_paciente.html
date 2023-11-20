@@ -32,12 +32,40 @@
             <label for="nombre-paciente">Nombre:</label>
             <input type="text" id="nombre-paciente" required>
             
+            <label for="dni">DNI:</label>
+            <input type="number" required>
+
             <label for="edad-paciente">Edad:</label>
             <input type="number" id="edad-paciente" required>
             
             <label for="necesidades-paciente">Necesidades:</label>
             <textarea id="necesidades-paciente" required></textarea>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text">
+
+            <label for="email">Email:</label>
+            <input type="email">
+
+            <label for="telefono">Telefono:</label>
+            <input type="number">
+
+            <div class="domicilio">
+                <label for="domicilio" >Domicilio:</label>
+                <input type="text" class="inputCasa">
+                <label for="numero">Numero:</label>
+                <input type="number" class="inputNumero">
+            </div>
+
+            <h3>Sexo:</h3>
+            <span class="radios">
+                <label for="sexo" id="masculino">Masculino</label>
+                <input type="radio" name="sexo">
+                <label for="sexo" id="femenino">Femenino</label>
+                <input type="radio" name="sexo">
+            </span>
             
+            <label for=""></label>
             <button type="submit">Consultar Cuidadoras</button>
         </form>
         <p id="mensaje-confirmacion-paciente"></p>
