@@ -1,0 +1,18 @@
+main{
+    margin: 4%
+}
+
+.pagar{
+    margin-top: 2%;
+    display: block;
+    font-size: 1.2em;
+    background-color: #ffba44;
+    padding: 1% 2%;
+    border-radius: 2em 2em;
+    border-color:1px solid #ba8833;
+}
+
+.pagar:hover{
+    background-color:#ba8833;
+    cursor: pointer;
+}
