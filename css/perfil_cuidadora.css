@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.perfil-cuidadora{
+
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.Lateral{
+    background-color: rgb(162, 181, 199);
+    padding: 3em;
+}
+
+.Lateral img{
+    width: 15em;
+}
+
+.Lateral h2,ul{
+    vertical-align: middle;
+}
+
+.Lateral h2{
+    font-size: 1.5em;
+}
+.Lateral ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Central{
+    display: block;
+    padding: 3em;
+}
+
+.precio{
+    border-radius: 2em;
+    margin-top: 1em;
+    background-color: #aacff0;
+    top: 10px;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 1.4em;
+}
+
+.foro h2{
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+.opinion-cuidadora {
+    
+    background-color: rgb(162, 181, 199);
+    margin-bottom: -3em;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2em;
+    padding: 1em;
+    padding-left: 1.5em;
+    width: 246%;
+
+}
+
+.usuario {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.calificacion {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.estrellas {
+    color: #FFD700;
+    margin-right: 5px;
+}
+
+.comentario {
+    margin-top: 10px;
+}
+
+.boton-perfil {
+
+    margin-top: 2em;
+    background-color: #ffba44;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.boton-perfil a{
+    text-decoration: none;
+    color: black;
+}
+
+.boton-perfil:hover{
+    background-color: #ba8833;
+    cursor: pointer;
+}
+
