@@ -6,60 +6,101 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.perfil-cuidadora{
+
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
-h1 {
+.Lateral{
+    background-color: rgb(162, 181, 199);
+    padding: 3em;
+}
+
+.Lateral img{
+    width: 15em;
+}
+
+.Lateral h2,ul{
+    vertical-align: middle;
+}
+
+.Lateral h2{
+    font-size: 1.5em;
+}
+.Lateral ul{
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
+.Central{
+    display: block;
+    padding: 3em;
+}
 
-.tarjeta-cuidadora {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.precio{
+    border-radius: 2em;
+    margin-top: 1em;
+    background-color: #aacff0;
+    top: 10px;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 1.4em;
+}
+
+.foro h2{
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
+.opinion-cuidadora {
+    
+    background-color: rgb(162, 181, 199);
+    margin-bottom: -3em;
+    border-bottom: 1px solid #ddd;
+    border-radius: 2em;
+    padding: 1em;
+    padding-left: 1.5em;
+    width: 246%;
+
+}
+
+.usuario {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.calificacion {
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-h2, p {
-    margin: 0;
-    text-align: center;
+.estrellas {
+    color: #FFD700;
+    margin-right: 5px;
 }
 
-.botones {
-    display: flex;
-    justify-content: space-between;
+.comentario {
     margin-top: 10px;
 }
 
-.boton {
-    background-color: #28A745;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.boton-perfil {
+
+    margin-top: 2em;
+    background-color: #ffba44;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.boton-perfil a{
+    text-decoration: none;
+    color: black;
+}
+
+.boton-perfil:hover{
+    background-color: #ba8833;
     cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-.contenedor-tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-}

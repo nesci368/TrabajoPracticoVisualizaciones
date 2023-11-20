@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.perfil-paciente{
+
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.Lateral{
+    background-color: rgb(162, 181, 199);
+    padding: 3em;
+}
+
+.Lateral img{
+    width: 15em;
+}
+
+.Lateral h2{
+    font-size: 1.5em;
+}
+.Lateral ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.Lateral li{
+    margin: 0px;
+}
+
+.Central{
+    display: block;
+    padding: 3em;
+}
+
