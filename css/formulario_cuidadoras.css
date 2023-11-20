@@ -35,10 +35,13 @@ button {
 
 .input-genero label{
     display: inline-block;
+    width: auto;
+    margin-right: 10%;
 }
 
-.input-genero input [type="radio"]{
-    display: flex;
+#genero_femenino, #genero_masculino{
+    display: inline-block;
+    width: auto;
 }
 
 .boton-cv {
