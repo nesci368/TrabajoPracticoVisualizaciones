@@ -9,61 +9,106 @@
 </head>
 <body>
     <header>
-        <h1>Plataforma de Cuidadoras Domiciliarias</h1>
+        <section class="logo">
+            <img src="./IMG/tu-cuidadora-ideal-2-sin-cruz2.png" alt="">
+        </section>
+        <section class="titulo">
+            <h1>Tu Cuidadora Ideal</h1>
+        </section>
+        <section class="menu-boton">
+            <img src="./IMG/menu.png" alt="">
+        </section>
     </header>
-
-    <nav>
+    
+    <nav id=menu class="menuVis menuOcul">
+        
         <ul>
             <li><a href="./home.html">Inicio</a></li>
+            <li><a href="./Perfil_cuidadores.html">Perfil</a></li>
             <li><a href="./buscar_cuidadora.html">Buscar Cuidadoras</a></li>
             <li><a href="./registrarse.html">Registrarse</a></li>
             <li><a href="./iniciar_sesion.html">Iniciar Sesión</a></li>
         </ul>
+
     </nav>
+<main>
 
+    
+</main>
     <section class="perfil-cuidadora">
-        <h1>Perfil de Cuidadora</h1>
+        
+        <section class="Lateral">
+            <img src="./IMG/Cuidador.png" alt="">
+            <div class="estado-contratacion">
+                <h2>Estado</h2>
+                <p>Disponible para contratación</p>
+            </div>
+            <div class="horarios-disponibles">
+                <h2>Horarios</h2>
+                <ul>
+                    <li>Lunes a Viernes: 9:00 AM - 5:00 PM</li>
+                    <li>Sábado: 10:00 AM - 2:00 PM</li>
+                </ul>
+            </div>
 
-        <div class="informacion">
-            <h2>Nombre Cuidadora</h2>
-            <p>Experiencia: 5 años</p>
-            <p>Especialización: Cuidado de personas mayores</p>
-        </div>
+        </section>
+          
+        <section class="Central">
 
-        <div class="experiencia-laboral">
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li>Trabajo en Casa Hogar "Ejemplo" - 2 años</li>
-                <li>Cuidado de pacientes con Alzheimer - 3 años</li>
-            </ul>
-        </div>
+            <section class="parteUno">
+                
+                    <h2>Nombre Cuidador</h2>
+                    <p>Especialista en cuidado de adultos mayores.</p>
+                    
+                </div>
+            </section>
 
-        <div class="especializacion">
-            <h2>Especialización en Patologías</h2>
-            <p>Certificada en el cuidado de personas con Alzheimer y demencia.</p>
-        </div>
+           
 
-        <div class="horarios-disponibles">
-            <h2>Horarios Disponibles</h2>
-            <ul>
-                <li>Lunes a Viernes: 9:00 AM - 5:00 PM</li>
-                <li>Sábado: 10:00 AM - 2:00 PM</li>
-            </ul>
-        </div>
 
-        <div class="estado-contratacion">
-            <h2>Estado de Contratación</h2>
-            <p>Disponible para contratación</p>
-        </div>
+            <div class="especializacion">
+                <h2>Patologias especializadas</h2>
+                <ul>
+                    <li>Alzheimer</li>
+                    <li>Demencia</li>
+                </ul>
+            </div>
+            <div class="experiencia-laboral">
+                <h2>Experiencia Laboral</h2>
+                    <ul>
+                        <li>Trabajo en Casa Hogar "Ejemplo" - 2 años</li>
+                        <li>Cuidado de pacientes con Alzheimer - 3 años</li>
+                    </ul>
+            </div>
 
-        <div class="botones">
-            <button class="boton">Contactar</button>
-            <button class="boton">Ver Más</button>
-        </div>
+            <div class="botones">
+                <button class="boton-perfil">Descargar CV</button>
+                <button class="boton-perfil"><a href="./formulario_de_pago.html">Contratar</a></button>
+            </div>
+
+            <section class="foro">
+                
+                <h2>Valoraciones</h2>
+        
+                <div class="opinion-cuidadora">
+                    <p class="usuario">Usuario123</p>
+                    <div class="calificacion">
+                        <span class="estrellas">&#9733; &#9733; &#9733; &#9733; &#9734;</span> 
+                        <p>4.0</p>
+                    </div>
+                    <p class="comentario">¡Excelente cuidadora! Muy profesional y amable. Recomiendo sus servicios.</p>
+                </div>
+        
+            </section>
+
+        </section>
+       
     </section>
-
     <footer>
         <p>&copy; 2023 Plataforma de Cuidadoras Domiciliarias</p>
     </footer>
+
+    <script src="./js/home.js"></script>
+
 </body>
 </html>
