@@ -1,18 +1,55 @@
-main{
-    margin: 4%
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color de texto principal */
 }
 
-.pagar{
+main {
+    margin: 4%;
+}
+
+.pagar {
     margin-top: 2%;
-    display: block;
-    font-size: 1.2em;
+    display: inline-block; /* Cambiado de block a inline-block */
+    font-size: 1em; /* Ajustado el tamaño de la fuente */
     background-color: #ffba44;
     padding: 1% 2%;
-    border-radius: 2em 2em;
-    border-color:1px solid #ba8833;
+    border-radius: 2em;
+    border: 1px solid #ba8833;
 }
 
-.pagar:hover{
-    background-color:#ba8833;
+.pagar:hover {
+    background-color: #ba8833;
     cursor: pointer;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+    main {
+        margin: 3%;
+    }
+
+    .pagar {
+        font-size: 0.9em;
+    }
+}
+
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin: 3%;
+    }
+
+    .pagar {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para pantallas grandes (1024px en adelante) */
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 4%;
+    }
 }

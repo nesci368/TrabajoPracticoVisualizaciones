@@ -1,25 +1,17 @@
-/* bse.css */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    color: #333; /* Color de texto principal */
+    color: #333;
 }
-
-header {
-    background-color: #007BFF; /* Color de fondo del encabezado */
-    color: #fff; /* Color de texto en el encabezado */
-    text-align: center;
-    padding: 20px;
-}
-
 h1 {
     margin: 0;
 }
 
 nav {
-    background-color: #333; /* Color de fondo de la barra de navegación */
+    background-color: #333;
 }
 
 ul {
@@ -36,7 +28,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff; /* Color del texto en los enlaces */
+    color: #fff;
 }
 
 a:hover {
@@ -56,6 +48,7 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 form {
@@ -88,9 +81,43 @@ button:hover {
     background-color: #218838; 
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .iniciar-sesion {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 15px;
+    }
+
+    ul {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    ul {
+        font-size: 1em;
+    }
 }

@@ -1,3 +1,4 @@
+/* Estilos base para todos los tamaños de pantalla */
 .buscar-cuidadoras {
     text-align: center;
     padding: 40px;
@@ -12,7 +13,6 @@
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-
 }
 
 .buscar-cuidadoras button {
@@ -30,6 +30,7 @@ button {
 select {
     width: 50px;
 }
+
 .tarjeta-cuidadora {
     width: 100%;
     box-sizing: border-box;
@@ -41,4 +42,70 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .buscar-cuidadoras form {
+        margin: 10px;
+    }
+
+    .buscar-cuidadoras select {
+        width: calc(100% - 20px);
+    }
+
+    .buscar-cuidadoras button {
+        padding: 10px 15px;
+    }
+
+    button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .tarjeta-cuidadora {
+        padding: 10px;
+    }
+}
+
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .buscar-cuidadoras form {
+        margin: 15px;
+    }
+
+    .buscar-cuidadoras select {
+        width: calc(50% - 10px);
+    }
+
+    .buscar-cuidadoras button {
+        padding: 10px 15px;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas grandes (1024px en adelante) */
+@media screen and (min-width: 1024px) {
+    .buscar-cuidadoras form {
+        margin: 20px;
+    }
+
+    .buscar-cuidadoras select {
+        width: auto;
+    }
+
+    .buscar-cuidadoras button {
+        padding: 10px 20px;
+    }
+
+    select {
+        width: 50px;
+    }
 }

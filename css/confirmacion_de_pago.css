@@ -1,37 +1,83 @@
-main{
-    margin: 7%;
+main {
+    margin: 5%;
 }
 
-.mensaje{
-    padding: 1% 4%;
+.mensaje {
+    padding: 2% 4%;
     background-color: #ffba44;
     border-radius: 10px;
 }
 
-p{
-    font-weight:bold;
+p {
+    font-weight: bold;
 }
 
-span{
+span {
     font-weight: bolder;
 }
 
-.ir-a-inicio{
-    margin-top: 2%;
-    display: block;
-    font-size: 1.2em;
+.ir-a-inicio {
+    margin-top: 3%;
+    display: inline-block; /* Cambiado de block a inline-block */
+    font-size: 1em; /* Ajustado el tamaño de la fuente */
     background-color: #ffba44;
     padding: 1% 2%;
-    border-radius: 2em 2em;
-    border-color:1px solid #ba8833;
+    border-radius: 2em;
+    border: 1px solid #ba8833; /* Corregido el error de la propiedad border-color */
 }
 
-.ir-a-inicio:hover{
-    background-color:#ba8833;
+.ir-a-inicio:hover {
+    background-color: #ba8833;
     cursor: pointer;
 }
 
-a{
-    text-decoration:none;
-    color:black;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+    main {
+        margin: 3%;
+    }
+
+    .mensaje {
+        padding: 3% 4%;
+    }
+
+    .ir-a-inicio {
+        margin-top: 5%;
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin: 4%;
+    }
+
+    .mensaje {
+        padding: 2% 3%;
+    }
+
+    .ir-a-inicio {
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos para pantallas grandes (1024px en adelante) */
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 5%;
+    }
+
+    .mensaje {
+        padding: 1.5% 4%;
+    }
+
+    .ir-a-inicio {
+        font-size: 1.3em;
+    }
 }

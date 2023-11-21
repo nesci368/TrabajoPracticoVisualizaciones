@@ -6,36 +6,74 @@ body {
     color: #333;
 }
 
-.perfil-paciente{
-
+.perfil-paciente {
     margin: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.Lateral{
+.Lateral {
     background-color: rgb(162, 181, 199);
-    padding: 3em;
+    padding: 1em;
+    text-align: center;
 }
 
-.Lateral img{
-    width: 15em;
+.Lateral img {
+    width: 100%; 
+    max-width: 15em;
+    border-radius: 50%;
 }
 
-.Lateral h2{
+.Lateral h2 {
     font-size: 1.5em;
+    margin-top: 0.5em;
 }
-.Lateral ul{
+
+.Lateral ul {
     list-style: none;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
 }
 
-.Lateral li{
-    margin: 0px;
+.Lateral li {
+    margin: 0;
+    margin-top: 0.5em;
 }
 
-.Central{
+.Central {
     display: block;
-    padding: 3em;
+    padding: 1em;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .perfil-paciente {
+        flex-direction: column; 
+    }
+
+    .Lateral {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .Lateral img {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Lateral {
+        padding: 2em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Lateral{
+        padding: 1em;
+    } 
 }
 

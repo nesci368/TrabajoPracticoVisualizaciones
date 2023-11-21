@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,59 +14,79 @@ main{
     margin-bottom: 30px;
 }
 
-.formTarjeta{
+.formTarjeta {
     background-color: white;
     border: solid black 1px;
     margin: 10px;
     padding: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.formTarjeta form{
+.formTarjeta form {
     display: flex;
     flex-direction: column;
 }
 
-select{
-    width: 200px;
-    margin-bottom: 30px;
+select,
+#numTarjeta,
+#nombreTitular,
+#Mes,
+#codSeguridad {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-#numTarjeta{
-    width: 300px;
-}
-
-#nombreTitular{
-    width: 250px;
-}
-
-#Mes{
-    width: 300px;
-}
-
-#codSeguridad{
-    width: 50px;
-    margin-bottom: 30px;
-}
-
-label{
-    margin-top: 30px;
-    margin-bottom: 30px;
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 button {
-    background-color: #28A745; 
-    color: #fff; 
+    background-color: #28A745;
+    color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 300px;
-    margin-left: 100px;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #218838; 
+    background-color: #218838;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .formTarjeta {
+        padding: 20px;
+    }
+
+    #numTarjeta {
+        width: 100%;
+    }
+
+    #nombreTitular {
+        width: 100%;
+    }
+
+    #Mes,
+    #codSeguridad {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .formTarjeta {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .formTarjeta {
+        padding: 50px;
+    }
 }

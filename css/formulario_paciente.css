@@ -11,8 +11,6 @@ body {
     margin: 0 auto; 
     background-color: #fff; 
     padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
@@ -26,6 +24,7 @@ form {
 
 label {
     font-weight: bold;
+    text-align: left;
 }
 
 input,
@@ -46,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color:#ba8833;
+    background-color: #ba8833;
 }
 
 #mensaje-confirmacion-paciente {
@@ -54,31 +53,42 @@ button:hover {
     color: #28A745; 
 }
 
-.domicilio{
+.domicilio {
     display: flex;
     flex-direction: row;
-    padding-right: 50px;
+    justify-content: space-between; 
 }
 
-.inputCasa{
-    margin-right: 50px;
-    margin-left: 5px;
-    width: 400px;
+.inputCasa {
+    width: calc(50% - 5px); 
 }
 
-.inputNumero{
-    margin-left: 5px;
-    width: 100px;
+.inputNumero {
+    width: calc(20% - 5px); 
 }
 
-.radios{
+.radios {
     display: flex;
     flex-direction: row;
-    width: 300px;
+    justify-content: space-between; 
+}
+
+.radios label {
+    margin-right: 1px;
 }
 
 @media only screen and (max-width: 600px) {
     .formulario-paciente {
         max-width: 100%; 
+    }
+
+    .domicilio,
+    .radios {
+        flex-direction: column; 
+    }
+
+    .inputCasa,
+    .inputNumero {
+        width: 100%;
     }
 }

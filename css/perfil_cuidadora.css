@@ -6,64 +6,64 @@ body {
     color: #333;
 }
 
-.perfil-cuidadora{
-
+.perfil-cuidadora {
     margin: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.Lateral{
+.Lateral {
     background-color: rgb(162, 181, 199);
-    padding: 3em;
+    padding: 1em;
+    text-align: center;
 }
 
-.Lateral img{
-    width: 15em;
+.Lateral img {
+    width: 100%;
+    max-width: 15em;
+    border-radius: 50%;
 }
 
-.Lateral h2,ul{
-    vertical-align: middle;
-}
-
-.Lateral h2{
+.Lateral h2 {
     font-size: 1.5em;
+    margin-top: 0.5em;
 }
-.Lateral ul{
+
+.Lateral ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-.Central{
-    display: block;
-    padding: 3em;
+    margin-top: 1em;
 }
 
-.precio{
+.Central {
+    display: block;
+    padding: 1em;
+}
+
+.precio {
     border-radius: 2em;
     margin-top: 1em;
     background-color: #aacff0;
-    top: 10px;
     text-align: center;
-    padding: 0.3em;
-    font-size: 1.4em;
+    padding: 0.5em;
+    font-size: 1.2em;
 }
 
-.foro h2{
-margin-top: 2em;
-margin-bottom: 2em;
+.foro h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .opinion-cuidadora {
-    
     background-color: rgb(162, 181, 199);
-    margin-bottom: -3em;
+    margin-bottom: -1em;
     border-bottom: 1px solid #ddd;
-    border-radius: 2em;
-    padding: 1em;
-    padding-left: 1.5em;
-    width: 246%;
-
+    border-radius: 1em;
+    padding: 0.5em;
+    padding-left: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .usuario {
@@ -72,7 +72,7 @@ margin-bottom: 2em;
 }
 
 .calificacion {
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
 }
@@ -83,24 +83,54 @@ margin-bottom: 2em;
 }
 
 .comentario {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .boton-perfil {
-
-    margin-top: 2em;
+    margin-top: 1em;
     background-color: #ffba44;
     padding: 1em;
-    border-radius: 2em;
+    border-radius: 1em;
+    text-align: center;
 }
 
-.boton-perfil a{
+.boton-perfil a {
     text-decoration: none;
     color: black;
 }
 
-.boton-perfil:hover{
+.boton-perfil:hover {
     background-color: #ba8833;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .perfil-cuidadora {
+        flex-direction: column;
+    }
+
+    .Lateral {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .Lateral img {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Lateral {
+        padding: 2em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Lateral{
+        padding: 1em;
+    }
 }
 
