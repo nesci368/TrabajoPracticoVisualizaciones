@@ -28,45 +28,56 @@
     
     <section class="formulario-paciente">
         <h2>Formulario del Paciente</h2>
-        <form id="formulario-paciente" onsubmit="consultarCuidadoras()">
-            <label for="nombre-paciente">Nombre:</label>
-            <input type="text" id="nombre-paciente" required>
-            
-            <label for="dni">DNI:</label>
-            <input type="number" required>
 
-            <label for="edad-paciente">Edad:</label>
-            <input type="number" id="edad-paciente" required>
+        <form id="formulario-paciente" onsubmit="consultarCuidadoras()">
+            <label for="nombre-paciente">Nombre completo:</label>
+            <input type="text" id="nombre-paciente" name="nombre-paciente" required>
             
-            <label for="necesidades-paciente">Necesidades:</label>
-            <textarea id="necesidades-paciente" required></textarea>
+            <label for="dni-paciente">N° de DNI o pasaporte:</label>
+            <input type="number" id="dni-paciente" name="dni-paciente" required>
+
+            <label for="fecha-de-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-de-nacimiento" name="fecha-de-nacimiento" required><br>
+
+            <label for="genero">Sexo:</label>
+            <span class="radios">
+                <input type="radio" id="masculino" name="sexo">
+                <label for="sexo" >Masculino</label>
+                <input type="radio" id="femenino" name="sexo">
+                <label for="sexo" >Femenino</label>
+            </span><br>
 
             <label for="nacionalidad">Nacionalidad:</label>
-            <input type="text">
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+            
+            <label for="necesidades-paciente">Necesidades:</label>
+            <textarea id="necesidades-paciente" name="necesidades-paciente" required></textarea>
+
+            <p>Domicilio:</p>
+            <div class="domicilio">
+                <label for="localidad" >Localidad:</label>
+                <input type="text" id="localidad" name="localidad">
+                <label for="calle" >Calle:</label>
+                <input type="text" id="calle" name="calle" class="calle">
+                <label for="numeracion">Numeración:</label>
+                <input type="number" id="numeracion" name="numeracion" class="numeracion">
+                <label for="especificacion-vivienda">Especificación:</label>
+                <input type="text" id="especificacion-vivienda" name="especificacion-vivienda">
+            </div> <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono">
 
             <label for="email">Email:</label>
-            <input type="email">
-
-            <label for="telefono">Telefono:</label>
-            <input type="number">
-
-            <div class="domicilio">
-                <label for="domicilio" >Domicilio:</label>
-                <input type="text" class="inputCasa">
-                <label for="numero">Numero:</label>
-                <input type="number" class="inputNumero">
-            </div>
-
-            <h3>Sexo:</h3>
-            <span class="radios">
-                <label for="sexo" id="masculino">Masculino</label>
-                <input type="radio" name="sexo">
-                <label for="sexo" id="femenino">Femenino</label>
-                <input type="radio" name="sexo">
-            </span>
+            <input type="email" id="email" name="email">
             
-            <label for=""></label>
-            <button type="submit">Consultar Cuidadoras</button>
+            <label for="contrasenia-paciente">Contraseña:</label>
+            <input type="password" id="contrasenia-paciente" name="contrasenia-paciente" required>
+
+            <label for="repetir-contrasenia-paciente">Repetir contraseña:</label>
+            <input type="password" id="repetir-contrasenia-paciente" name="repetir-contrasenia-paciente" required><br>
+            
+            <button type="submit">Registrarse como Paciente</button>
         </form>
         <p id="mensaje-confirmacion-paciente"></p>
     </section>

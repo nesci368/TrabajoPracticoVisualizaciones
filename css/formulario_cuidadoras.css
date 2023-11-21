@@ -7,7 +7,7 @@ body {
 }
 
 .formulario-cuidadora {
-    max-width: 600px; /* Ancho máximo del formulario */
+    max-width: 50%; /* Ancho máximo del formulario */
     margin: 4% auto; /* Centra el formulario en la página */
     background-color: #fff; /* Color de fondo del formulario */
     padding: 20px;
@@ -20,7 +20,7 @@ form {
     gap: 8px;
 }
 
-label {
+label, p {
     font-weight: bold;
 }
 
@@ -57,6 +57,7 @@ button {
 }
 
 button {
+    margin-top: 20px;
     background-color: #ffba44; 
     color: #fff; 
     padding: 10px 15px;

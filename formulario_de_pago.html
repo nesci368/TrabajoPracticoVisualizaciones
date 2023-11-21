@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/formulario_de_pago.css">
-    <title>Document</title>
+    <title>Formulario de pago</title>
 </head>
 <body>
     <header>
@@ -20,25 +20,29 @@
         </section>
     </header>
 
-    <main>
+    <main class="formulario-pago">
         <h2>Formulario de pago</h2>
 
         <form id="formularioPago" action="./confirmacion_de_pago.html" onsubmit="return validarSeleccionTipoDeTarjeta() && validarTitularTarjeta() && validarNumeroTarjeta() && validarFechaVencimiento() && validarCVV()">
-            <p>Tipo de Tarjeta:</p>
+            <label for="tipoTarjeta">Tipo de Tarjeta:</label>
+            <div>
             <input type="radio" id="credito" name="tipoTarjeta" value="credito">
             <label for="credito">Crédito</label>
-            
             <input type="radio" id="debito" name="tipoTarjeta" value="debito">
-            <label for="debito">Débito</label><br><br>
+            <label for="debito">Débito</label>
+            </div><br>
 
             <label for="titularDeLaTarjeta">Titular de la Tarjeta:</label>
-            <input type="text" id="titularDeLaTarjeta" name="titularDeLaTarjeta" required><br><br>
+            <input type="text" id="titularDeLaTarjeta" name="titularDeLaTarjeta" required><br>
+
+            <label for="dniTitular">DNI del titular:</label>
+            <input type="text" id="dniTitular" name="dniTitular" required><br>
             
             <label for="numeroTarjeta">Número de Tarjeta:</label>
-            <input type="text" id="numeroTarjeta" name="numeroTarjeta" maxlength="16" required><br><br>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" maxlength="16" required><br>
             
             <label for="fechaExpiracion">Fecha de Expiración:</label>
-            <input type="text" id="fechaExpiracion" name="fechaExpiracion" maxlength="5" placeholder="MM/YY" required><br><br>
+            <input type="text" id="fechaExpiracion" name="fechaExpiracion" maxlength="5" placeholder="MM/YY" required><br>
             
             <label for="cvv">CVV:</label>
             <input type="text" id="cvv" name="cvv" maxlength="3" required><br><br>
