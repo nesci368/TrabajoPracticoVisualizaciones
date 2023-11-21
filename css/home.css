@@ -4,6 +4,11 @@
     --color-terciario: #eff8ff;
 }
 
+.menuVis a{
+    text-decoration: none;
+    color:black;
+}
+
 @media screen and (max-width: 767px) {
     /* Estilos para pantallas pequeñas */
     body {
@@ -313,9 +318,26 @@ body {
 header {
     display: grid;
     background-color: var(--color-primario);
-    grid-template-columns: 8em 89% 4.5em;
+    grid-template-columns: 7em 82% 5em 5em;
+    gap: 1em;
     align-items: center;
 }
+
+.notificacion{
+    grid-column: 3;
+}
+
+.notificacion:hover{
+    cursor: pointer;
+    background-color: #6288aa;
+}
+
+.notificacion img{
+    padding-left: 1em;
+    width: 3em;
+
+}
+
 .logo{
     grid-column: 1;
     margin: 1em;
@@ -330,7 +352,7 @@ header {
 .menu-boton{
     align-items: center;
     display: block;
-    grid-column: 3;
+    grid-column: 4;
 }
 .menu-boton:hover{
     background-color: #6288aa;

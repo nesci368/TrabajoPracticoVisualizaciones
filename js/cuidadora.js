@@ -138,7 +138,7 @@ function mostrarResultados(resultados) {
                 <p>Precio: $${cuidadora.precio} pesos</p>
                 <div class="botones">
                     <button class="boton">Seleccionar</button>
-                    <button class="boton">Ver Más</button>
+                    <button class="boton"><a href="./perfil_cuidador.html">Ver Más</button>
                 </div>
             `;
             contenedorResultados.appendChild(tarjeta);
