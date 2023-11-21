@@ -18,12 +18,16 @@
     header {
         display: grid;
         background-color: var(--color-primario);
-        grid-template-columns: 2em 78% 4.5em;
+        grid-template-columns: 4.5em 78% 4.5em;
         align-items: center;
     }
     .logo{
         grid-column: 1;
         margin: 1em;
+    }
+
+    .logo img{
+        width: 4em;
     }
     .titulo{
         grid-column: 2;
@@ -103,7 +107,7 @@
     
     .botones-iniciar{
         background-color: var(--color-primario);
-        display: flex;
+        display: grid;
         flex-direction: row
     }
     
@@ -119,6 +123,20 @@
         cursor: pointer;
     }
     
+    #inicio-sesion{
+        background-color: #aacff0;
+        grid-column: span 2;
+    }
+    
+    #inicio-sesion a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #inicio-sesion:hover{
+        background-color: #6288aa;
+    }
+
     footer{
         background-color: var(--color-primario);
         display: block;
@@ -147,12 +165,16 @@
     header {
         display: grid;
         background-color: var(--color-primario);
-        grid-template-columns: 2em 88% 4.5em;
+        grid-template-columns: 4.5em 88% 4.5em;
         align-items: center;
     }
     .logo{
         grid-column: 1;
-    margin: 1em;
+        margin: 1em;
+    }
+
+    .logo img{
+        width: 4em;
     }
     .titulo{
         grid-column: 2;
@@ -234,7 +256,7 @@
         position: absolute;
         top: 60%;
         left: 0.5%;
-        display: flex;
+        display: grid;
         flex-direction: row
     }
     
@@ -249,7 +271,19 @@
         background-color:#ba8833;
         cursor: pointer;
     }
+    #inicio-sesion{
+        background-color: #aacff0;
+        grid-column: span 2;
+    }
     
+    #inicio-sesion a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #inicio-sesion:hover{
+        background-color: #6288aa;
+    }
     footer{
         background-color: var(--color-primario);
         display: block;
@@ -369,7 +403,8 @@ header {
     position: absolute;
     top: 60%;
     left: 0.5%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-direction: row
 }
 
@@ -383,6 +418,20 @@ header {
 .botones-iniciar button:hover{
     background-color:#ba8833;
     cursor: pointer;
+}
+
+#inicio-sesion{
+    background-color: #aacff0;
+    grid-column: span 2;
+}
+
+#inicio-sesion a{
+    text-decoration: none;
+    color: black;
+}
+
+#inicio-sesion:hover{
+    background-color: #6288aa;
 }
 
 footer{
