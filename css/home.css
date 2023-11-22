@@ -23,7 +23,7 @@
     header {
         display: grid;
         background-color: var(--color-primario);
-        grid-template-columns: 4.5em 78% 4.5em;
+        grid-template-columns: 4.5em 88% 4.5em;
         align-items: center;
     }
     .logo{
@@ -38,11 +38,26 @@
         grid-column: 2;
         margin: 0.6em;
     }
+    .notificacion{
+        grid-column: 3;
+    }
+    
+    .notificacion:hover{
+        cursor: pointer;
+        background-color: #6288aa;
+    }
+    
+    .notificacion img{
+        padding-left: 1em;
+        width: 3em;
+    
+    }
     .menu-boton{
         align-items: center;
         display: block;
         grid-column: 3;
     }
+
     .menu-boton:hover{
         background-color: #6288aa;
         cursor: pointer;
@@ -184,6 +199,20 @@
     .titulo{
         grid-column: 2;
         margin: 0.6em;
+    }
+    .notificacion{
+        grid-column: 3;
+    }
+    
+    .notificacion:hover{
+        cursor: pointer;
+        background-color: #6288aa;
+    }
+    
+    .notificacion img{
+        padding-left: 1em;
+        width: 3em;
+    
     }
     .menu-boton{
         align-items: center;

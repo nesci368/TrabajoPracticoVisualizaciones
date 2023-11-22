@@ -45,6 +45,15 @@ body {
     padding: 1em;
 }
 
+.editar{
+    background-color: #ffba44;
+    padding: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    right: 2em;
+}
 
 @media only screen and (max-width: 767px) {
     .perfil-paciente {

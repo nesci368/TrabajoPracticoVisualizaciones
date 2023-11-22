@@ -60,6 +60,8 @@
           
         <section class="Central">
 
+            <a href="" class="editar">Editar Perfil</a>
+
             <section class="parteUno">
                 
                     <h2>Darío Barassi</h2>
@@ -67,6 +69,8 @@
                     
                 </div>
             </section>
+
+           
 
 
             <div class="especializacion">
@@ -85,8 +89,7 @@
             </div>
 
             <div class="botones">
-                <button class="boton-perfil">Descargar CV</button>
-                <button class="boton-perfil"><a href="./formulario_de_pago.html">Contratar</a></button>
+                <button class="boton-perfil">Ver CV</button>
             </div>
 
             <section class="foro">
