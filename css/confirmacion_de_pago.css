@@ -17,17 +17,17 @@ span {
 }
 
 .ir-a-inicio {
-    margin-top: 3%;
-    display: inline-block; /* Cambiado de block a inline-block */
-    font-size: 1em; /* Ajustado el tamaño de la fuente */
-    background-color: #ffba44;
-    padding: 1% 2%;
-    border-radius: 2em;
-    border: 1px solid #ba8833; /* Corregido el error de la propiedad border-color */
+    background-color: #ffba44; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .ir-a-inicio:hover {
-    background-color: #ba8833;
+    background-color: #ba8833; 
     cursor: pointer;
 }
 

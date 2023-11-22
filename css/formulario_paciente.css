@@ -63,45 +63,28 @@ button:hover {
     color: #28A745; 
 }
 
-<<<<<<< HEAD
-.domicilio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+footer p{
+    text-align: center;
+    font-weight: lighter;
 }
 
-.inputCasa {
-    width: calc(50% - 5px); 
-}
-
-.inputNumero {
-    width: calc(20% - 5px); 
-}
-
-.radios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
-
-.radios label {
-    margin-right: 1px;
-}
-
-=======
->>>>>>> fb76eb8339a0fac9905b4f5880f6202c00d28174
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .formulario-paciente {
-        max-width: 100%; 
+        max-width: 70%;
+        margin: 8% auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .formulario-paciente {
+        max-width: 100%;
+        margin: 10% auto;
     }
 
-    .domicilio,
-    .radios {
-        flex-direction: column; 
-    }
-
-    .inputCasa,
-    .inputNumero {
-        width: 100%;
+    label,
+    p,
+    input,
+    button {
+        font-size: 0.8em;
     }
 }

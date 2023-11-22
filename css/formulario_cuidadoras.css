@@ -76,8 +76,27 @@ button:hover, .adjuntar-cv:hover {
     color: #ffba44; 
 }
 
-@media only screen and (max-width: 600px) {
+footer{
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
     .formulario-cuidadora {
-        max-width: 100%; 
+        max-width: 70%;
+        margin: 8% auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .formulario-cuidadora {
+        max-width: 100%;
+        margin: 10% auto;
+    }
+
+    label,
+    p,
+    input,
+    button {
+        font-size: 0.8em;
     }
 }
