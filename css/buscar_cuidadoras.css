@@ -1,4 +1,7 @@
-/* Estilos base para todos los tamaños de pantalla */
+body{
+    background-color: #f4f4f4;
+}
+
 .buscar-cuidadoras {
     text-align: center;
     padding: 40px;

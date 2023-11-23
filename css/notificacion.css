@@ -45,6 +45,11 @@ main h2{
     background-color:     #ba8833;
 
 }*/
+body{
+    background-color: #f4f4f4;
+    position: relative;
+}
+
 main {
     padding: 20px;
 }
@@ -122,6 +127,18 @@ a{
 
 .elim:hover {
     background-color: #d32f2f;
+}
+
+.pacientes-actuales{
+    text-align: left;
+    margin-left: 7%;
+}
+
+.footer-absolute{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
