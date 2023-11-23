@@ -22,8 +22,10 @@
     
     header {
         display: grid;
+        width: 100vw;
         background-color: var(--color-primario);
-        grid-template-columns: 4.5em 88% 4.5em;
+        grid-template-columns: 7em 0.8fr 2em 2em;
+        gap: 0.5em;
         align-items: center;
     }
     .logo{
@@ -38,6 +40,10 @@
         grid-column: 2;
         margin: 0.6em;
     }
+
+    .titulo h1{
+        font-size: 1em;
+    }
     .notificacion{
         grid-column: 3;
     }
@@ -49,13 +55,13 @@
     
     .notificacion img{
         padding-left: 1em;
-        width: 3em;
+        width: 1em;
     
     }
     .menu-boton{
         align-items: center;
         display: block;
-        grid-column: 3;
+        grid-column: 4;
     }
 
     .menu-boton:hover{
@@ -64,7 +70,7 @@
     }
     .menu-boton img{
         display: block;
-        width: 4em;
+        width: 1em;
         padding-left: 0.2em;
     }
     
@@ -184,8 +190,10 @@
     
     header {
         display: grid;
+        width: 100vw;
         background-color: var(--color-primario);
-        grid-template-columns: 4.5em 88% 4.5em;
+        grid-template-columns: 7em 0.97fr 5em 5em;
+        gap: 1em;
         align-items: center;
     }
     .logo{
@@ -217,7 +225,7 @@
     .menu-boton{
         align-items: center;
         display: block;
-        grid-column: 3;
+        grid-column: 4;
     }
     .menu-boton:hover{
         background-color: #6288aa;
@@ -346,8 +354,9 @@ body {
 
 header {
     display: grid;
+    width: 100vw;
     background-color: var(--color-primario);
-    grid-template-columns: 7em 82% 5em 5em;
+    grid-template-columns: 7em 0.97fr 5em 5em;
     gap: 1em;
     align-items: center;
 }
